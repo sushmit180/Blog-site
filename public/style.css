@@ -1,0 +1,156 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== BODY ========== */
+body {
+    font-family: 'Segoe UI', 'Fira Code', monospace;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ========== HEADINGS ========== */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00bcd4;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+h3, h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+h3 {
+    color: #ff9800;
+    font-size: 18px;
+}
+
+h4 {
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+/* ========== POST CARDS ========== */
+.post {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-left: 5px solid #00bcd4;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, border-left-color 0.3s;
+}
+
+.post:hover {
+    transform: scale(1.01);
+    border-left-color: #1de9b6;
+}
+
+/* ========== LINKS ========== */
+a {
+    color: #1de9b6;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #64ffda;
+    text-shadow: 0 0 3px #64ffda;
+}
+
+/* ========== FORMS ========== */
+form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #444;
+    color: #e0e0e0;
+    padding: 12px 14px;
+    font-size: 15px;
+    border-radius: 6px;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #00bcd4;
+    background-color: rgba(255, 255, 255, 0.08);
+    outline: none;
+}
+
+/* ========== BUTTONS ========== */
+button {
+    background: linear-gradient(90deg, #00bcd4, #1de9b6);
+    color: #121212;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 188, 212, 0.3);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #1de9b6, #00bcd4);
+    box-shadow: 0 6px 20px rgba(0, 255, 200, 0.4);
+}
+
+/* ========== UTILITY CLASSES ========== */
+.actions {
+    margin-top: 10px;
+}
+
+.back-link {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #aaa;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+}
